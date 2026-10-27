@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Operation: Level 28">
+<meta property="og:description" content="Confidential. Kooks, you have been selected for an exclusive birthday experience.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F1E9DA">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<title>Operation Level 28</title>
+<meta name="description" content="You have been selected for an exclusive birthday experience. Details classified.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar" id="topbar" hidden>
+  <div class="wrap">
+    <span class="brand">Level <span>28</span></span>
+    <span class="mini" id="miniCountdown" aria-live="off">T-minus …</span>
+  </div>
+</header>
+
+<main>
+  <!-- ============ OPENER ============ -->
+  <section class="gate" id="gate" aria-labelledby="gate-title">
+    <div class="wrap">
+      <article class="dossier">
+        <div class="d-top">
+          <div class="cls"><b>Confidential document</b>Classification: <span>Birthday business</span></div>
+          <div class="d-file">FILE Nº 28-1108<br>COPY 1 OF 1</div>
+        </div>
+
+        <div class="seal" aria-hidden="true"><div><b>28</b><span id="sealText">Top<br>secret</span></div></div>
+
+        <div class="title-block">
+          <span class="op">Operation:</span>
+          <h1 class="big" id="gate-title">Level <span class="n28">28</span></h1>
+          <p class="subtitle">Your Birthday. Your Rules. My Planning. Your Responsibility to Show Up.</p>
+        </div>
+
+        <dl class="memo">
+          <dt>To</dt><dd id="toName">The Birthday Girl</dd>
+          <dt>Age</dt><dd>28</dd>
+          <dt>Status</dt><dd class="status">Officially too fabulous for an ordinary Sunday.</dd>
+        </dl>
+
+        <div class="brief-copy">
+          <p>You have been selected for an exclusive birthday experience.</p>
+          <p>Your mission, should you choose to accept it, is to show up, look effortlessly amazing, enjoy the ride, eat something delicious, and make memories.</p>
+          <div class="redact">
+            <span class="k">The details?</span><span class="v">Classified.</span>
+            <span class="k">The company?</span><span class="v">Excellent.</span>
+            <span class="k">The experience?</span><span class="v">Worth getting out of bed for.</span>
+          </div>
+        </div>
+
+        <div class="gate-cta">
+          <button class="btn" id="unlockBtn" type="button" aria-controls="experience" aria-expanded="false">
+            <i data-lucide="lock-open"></i><span>Unlock my birthday experience</span>
+          </button>
+          <span class="hint">Best opened somewhere you can smile freely.</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE (revealed) ============ -->
+  <div id="experience" hidden>
+
+    <!-- countdown -->
+    <section class="countdown" aria-label="Countdown to the birthday">
+      <div class="wrap">
+        <div class="cd-card">
+          <div class="cd-label"><span>T-minus to departure</span><span id="cdDate">Sun · 08 Nov 2026</span></div>
+          <div class="cd-grid" role="timer" aria-live="off" id="cdGrid">
+            <div class="cd-unit"><b id="cdD">--</b><span>Days</span></div>
+            <div class="cd-unit"><b id="cdH">--</b><span>Hours</span></div>
+            <div class="cd-unit"><b id="cdM">--</b><span>Min</span></div>
+            <div class="cd-unit"><b id="cdS">--</b><span>Sec</span></div>
+          </div>
+          <p class="cd-note" id="cdNote">Plenty of time to choose sneakers. Not enough time to guess the destination.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- briefing -->
+    <section class="section" id="briefing" aria-labelledby="briefing-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="sec-tag"><span class="num">BRIEF 01</span><span class="eyebrow">Official event briefing</span></div>
+          <h2 class="h-sec" id="briefing-title">Your Sunday, officially booked.</h2>
+        </div>
+
+        <div class="pass" role="group" aria-label="Your boarding pass">
+          <div class="pass-main">
+            <div class="pass-head">
+              <span class="air">Level<span>28</span> Air</span>
+              <span class="stamp">Birthday class</span>
+            </div>
+            <div class="fields">
+              <div class="field full"><div class="k">Passenger</div><div class="v" id="passName">The Birthday Girl</div></div>
+              <div class="field"><div class="k">Date</div><div class="v">Sun 08 Nov 2026</div></div>
+              <div class="field"><div class="k">Dress code</div><div class="v">Sport casual</div></div>
+              <div class="field"><div class="k">Destination</div><div class="v tba">Classified</div></div>
+              <div class="field"><div class="k">Pickup time</div><div class="v sm tba">To be announced</div></div>
+              <div class="field"><div class="k">Pickup point</div><div class="v sm tba">To be announced</div></div>
+              <div class="field"><div class="k">Planning by</div><div class="v sm" id="passPlanner">Not you</div></div>
+            </div>
+          </div>
+          <div class="pass-stub">
+            <div class="barcode" aria-hidden="true"></div>
+            <div class="seat">Seat<b>28A</b>Window, obviously</div>
+          </div>
+        </div>
+
+        <div class="dress">
+          <div class="dress-copy">
+            <span class="eyebrow">Dress code · Sport casual</span>
+            <p class="lede">Think comfortable, stylish, and ready for anything.</p>
+            <p>You should be able to look amazing in photos, enjoy a road trip, and participate in activities without regretting your outfit choices halfway through the day.</p>
+            <p class="aside">Comfortable, effortlessly stylish, and adventure-ready? That’s the assignment.</p>
+          </div>
+          <div class="verdicts" aria-label="Outfit rulings">
+            <div class="verdict no"><span class="tag">Reconsider</span><span>High heels that make walking an Olympic sport.</span></div>
+            <div class="verdict yes"><span class="tag">Strong candidate</span><span>Your favorite sneakers.</span></div>
+            <div class="verdict go"><span class="tag">Approved</span><span>Comfortable, stylish, ready for anything.</span></div>
+          </div>
+        </div>
+
+        <div class="duties">
+          <div class="duty-box">
+            <h3>Your responsibilities</h3>
+            <ol>
+              <li>Be ready on time.</li>
+              <li>Follow the dress code.</li>
+              <li>Tell me what you want to eat.</li>
+              <li>Bring your best mood.</li>
+              <li>Trust the process.</li>
+            </ol>
+          </div>
+          <div class="duty-box not">
+            <h3>Not your responsibilities</h3>
+            <ul>
+              <li>Planning the itinerary</li>
+              <li>Finding the destination</li>
+              <li>Asking “Are we there yet?” every seven minutes</li>
+            </ul>
+            <p>All of that has been outsourced.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- road trip -->
+    <section class="section" id="road" aria-labelledby="road-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="sec-tag"><span class="num">BRIEF 02</span><span class="eyebrow">Route planning</span></div>
+          <h2 class="h-sec" id="road-title">The road awaits. The destination is classified.</h2>
+        </div>
+
+        <div class="road-copy">
+          <span>One lovely road trip.</span>
+          <span>A destination I’m keeping to myself.</span>
+          <span>A few activities I genuinely think you’ll love.</span>
+          <span>Good company.</span>
+          <span><em>And absolutely no responsibility for planning anything.</em></span>
+          <div class="tail">
+            <p>Expect a change of scenery, some beautiful moments, a lot of laughing, and a day built around you from the first stop to the last.</p>
+            <p><strong>Your job is to enjoy the ride.</strong> My job is to make sure you have a day worth remembering.</p>
+          </div>
+        </div>
+
+        <figure class="map" id="map" style="margin-inline:0">
+          <svg viewBox="0 0 640 300" role="img" aria-labelledby="mapTitle">
+            <title id="mapTitle">A stylized route from your door to a classified destination, with a few sealed stops along the way.</title>
+            <g stroke="rgba(28,27,24,.1)" stroke-width="1" fill="none">
+              <path d="M0 60 H640 M0 120 H640 M0 180 H640 M0 240 H640 M80 0 V300 M160 0 V300 M240 0 V300 M320 0 V300 M400 0 V300 M480 0 V300 M560 0 V300"/>
+            </g>
+            <path d="M-10 250 C 120 230, 150 280, 260 262 S 420 300, 650 236" fill="none" stroke="rgba(90,98,56,.28)" stroke-width="22" stroke-linecap="round"/>
+            <path d="M470 -10 C 500 60, 590 70, 650 120" fill="none" stroke="rgba(90,98,56,.18)" stroke-width="40"/>
+            <!-- route: underlay dashes + drawn mask line -->
+            <path id="route" d="M56 236 C 120 236, 120 150, 196 150 S 280 214, 336 196 S 400 92, 470 98 S 560 66, 586 70" fill="none" stroke="#1C1B18" stroke-width="3" stroke-linecap="round"/>
+            <path id="routeDraw" d="M56 236 C 120 236, 120 150, 196 150 S 280 214, 336 196 S 400 92, 470 98 S 560 66, 586 70" fill="none" stroke="#E5D8C0" stroke-width="7" stroke-linecap="round" pathLength="1200" stroke-dasharray="1200"/>
+            <!-- start -->
+            <g transform="translate(56 236)">
+              <circle r="11" fill="#1C1B18"/><circle r="4" fill="#F1E9DA"/>
+              <text x="0" y="34" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" fill="#1C1B18" letter-spacing="1.5">YOU</text>
+            </g>
+            <!-- sealed stops -->
+            <g transform="translate(196 150)">
+              <rect x="-15" y="-15" width="30" height="30" rx="3" fill="#FBF7EF" stroke="#1C1B18" stroke-width="2" transform="rotate(45)"/>
+              <text y="5" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" fill="#93491E">01</text>
+            </g>
+            <g transform="translate(336 196)">
+              <rect x="-15" y="-15" width="30" height="30" rx="3" fill="#FBF7EF" stroke="#1C1B18" stroke-width="2" transform="rotate(45)"/>
+              <text y="5" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" fill="#93491E">02</text>
+            </g>
+            <g transform="translate(470 98)">
+              <rect x="-15" y="-15" width="30" height="30" rx="3" fill="#FBF7EF" stroke="#1C1B18" stroke-width="2" transform="rotate(45)"/>
+              <text y="5" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" fill="#93491E">03</text>
+            </g>
+            <!-- end pin -->
+            <g transform="translate(586 70)">
+              <g class="pin-end">
+                <path d="M0 0 C -14 -16, -18 -24, -18 -34 A 18 18 0 1 1 18 -34 C 18 -24, 14 -16, 0 0 Z" fill="#B5602E" stroke="#1C1B18" stroke-width="2"/>
+                <text y="-28" text-anchor="middle" font-family="Big Shoulders Display, Impact, sans-serif" font-size="22" font-weight="900" fill="#FBF7EF">?</text>
+              </g>
+            </g>
+            <text x="300" y="276" font-family="IBM Plex Mono, monospace" font-size="11" fill="#4C473D" letter-spacing="1.5">KM 28 · SCENIC SECTION (PROBABLY)</text>
+          </svg>
+          <figcaption class="legend"><span>◆ Sealed stop</span><span>Scale: not disclosed</span><span>Route: subject to snacks</span></figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- breakfast -->
+    <section class="section" id="breakfast" aria-labelledby="breakfast-title">
+      <div class="wrap wide" style="max-width:860px">
+        <div class="sec-head">
+          <div class="sec-tag"><span class="num">FORM 03</span><span class="eyebrow">Catering intake · Morning</span></div>
+          <h2 class="h-sec" id="breakfast-title">First things first: breakfast.</h2>
+          <p class="lede">Before we conquer the day, we need to address the most important logistical issue: what are we feeding you?</p>
+          <p class="aside">Your birthday is a special occasion. I’m not making breakfast decisions on your behalf and risking an international incident before 10 AM.</p>
+        </div>
+
+        <div class="food-form">
+          <fieldset class="group" id="g-breakfast" aria-describedby="err-breakfast">
+            <legend>Breakfast <small>Pick one or more. These are ideas, not a fixed menu.</small></legend>
+            <div class="opts" id="breakfastOpts"></div>
+            <p class="err" id="err-breakfast" hidden></p>
+          </fieldset>
+
+          <div class="tf" id="tf-breakfastOther" hidden>
+            <label for="breakfastOther">“Other” breakfast, in your words</label>
+            <input id="breakfastOther" type="text" maxlength="200" placeholder="e.g. Ka'ak with cheese and a view" aria-describedby="err-breakfastOther">
+            <p class="err" id="err-breakfastOther" hidden></p>
+          </div>
+
+          <div class="tf">
+            <label for="breakfastNotes">Anything specific you’d love for breakfast?</label>
+            <span class="help" id="help-bn">Optional. A place, a dish, a level of cheese.</span>
+            <textarea id="breakfastNotes" maxlength="500" aria-describedby="help-bn"></textarea>
+          </div>
+
+          <fieldset class="group" id="g-drink" aria-describedby="err-drink">
+            <legend>Coffee, tea, juice, or something else? <small>Pick one.</small></legend>
+            <div class="pills" id="drinkOpts"></div>
+            <p class="err" id="err-drink" hidden></p>
+          </fieldset>
+
+          <div class="tf" id="tf-drinkOther" hidden>
+            <label for="drinkOther">What should we pour?</label>
+            <input id="drinkOther" type="text" maxlength="120" placeholder="e.g. Iced latte, oat milk, no notes" aria-describedby="err-drinkOther">
+            <p class="err" id="err-drinkOther" hidden></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- lunch -->
+    <section class="section" id="lunch" aria-labelledby="lunch-title">
+      <div class="wrap wide" style="max-width:860px">
+        <div class="sec-head">
+          <div class="sec-tag"><span class="num">FORM 04</span><span class="eyebrow">Catering intake · Midday</span></div>
+          <h2 class="h-sec" id="lunch-title">And now, the main character’s lunch.</h2>
+          <p class="lede">Because a birthday road trip without a proper lunch plan is simply poor management.</p>
+        </div>
+
+        <div class="food-form">
+          <fieldset class="group" id="g-lunch" aria-describedby="err-lunch">
+            <legend>Lunch <small>Pick as many as sound good.</small></legend>
+            <div class="opts" id="lunchOpts"></div>
+            <p class="err" id="err-lunch" hidden></p>
+          </fieldset>
+
+          <div class="tf" id="tf-lunchOther" hidden>
+            <label for="lunchOther">“Other” lunch, in your words</label>
+            <input id="lunchOther" type="text" maxlength="200" placeholder="e.g. Seafood by the sea" aria-describedby="err-lunchOther">
+            <p class="err" id="err-lunchOther" hidden></p>
+          </div>
+
+          <div class="tf">
+            <label for="lunchCraving">Any specific dish you’re craving?</label>
+            <input id="lunchCraving" type="text" maxlength="200" placeholder="Optional">
+          </div>
+          <div class="tf">
+            <label for="lunchAvoid">Anything you don’t eat or would prefer to avoid?</label>
+            <input id="lunchAvoid" type="text" maxlength="200" placeholder="Optional">
+          </div>
+          <div class="tf">
+            <label for="dietary">Any food allergies or dietary requirements I should know about?</label>
+            <span class="help" id="help-diet">Optional, but please mention anything serious. This one gets read twice.</span>
+            <textarea id="dietary" maxlength="400" aria-describedby="help-diet"></textarea>
+          </div>
+
+          <div class="memo-note">
+            <span class="stamp">Received</span>
+            <p>Your preferences will be reviewed by the Birthday Planning Department. Requests are taken seriously, although the department reserves the right to dramatically overthink them.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- terms -->
+    <section class="section" id="terms" aria-labelledby="terms-title">
+      <div class="wrap wide" style="max-width:900px">
+        <div class="sec-head">
+          <div class="sec-tag"><span class="num">DOC 05</span><span class="eyebrow">The fine print, but fun</span></div>
+          <h2 class="h-sec" id="terms-title">A few terms and conditions.</h2>
+        </div>
+        <ol class="terms" id="termsList" style="list-style:none;margin:0;padding:0"></ol>
+        <p class="ack">By continuing, you acknowledge that you are turning 28, deserve a wonderful day, and have officially agreed to let someone else handle the planning for once.<span class="stamp">Agreed</span></p>
+      </div>
+    </section>
+
+    <!-- perks + envelope -->
+    <section class="section" id="perks" aria-labelledby="perks-title">
+      <div class="wrap">
+        <div class="perk-card">
+          <div class="ph">
+            <h3 id="perks-title">Your Level 28 privileges</h3>
+            <span class="tier">Valid 08·11·26</span>
+          </div>
+          <ul>
+            <li><i data-lucide="crown"></i><span>Full birthday-girl privileges, all day.</span></li>
+            <li><i data-lucide="utensils"></i><span>First priority in food negotiations.</span></li>
+            <li><i data-lucide="music"></i><span>Permission to request music for the road trip.</span></li>
+            <li><i data-lucide="sparkles"></i><span>Unlimited birthday-day compliments.</span></li>
+            <li><i data-lucide="shirt"></i><span>The right to veto an uncomfortable outfit.</span></li>
+            <li><i data-lucide="drama"></i><span>One officially sanctioned dramatic moment. Use it wisely.</span></li>
+          </ul>
+          <p class="fine">Playful perks, not a gift list. Not redeemable for cash, jewelry, or a yacht.</p>
+        </div>
+
+        <div class="envelope-wrap">
+          <span class="eyebrow" style="text-align:center">One more thing</span>
+          <button class="envelope" id="envelope" type="button" aria-expanded="false" aria-controls="letter">
+            <span class="flap" aria-hidden="true"></span>
+            <span class="wax" aria-hidden="true">28</span>
+            <span class="addr"><small>Sealed · open by hand</small><span id="envTo">For the birthday girl</span></span>
+            <span class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Open the sealed note</span>
+          </button>
+          <div class="letter" id="letter" hidden tabindex="-1">
+            <p id="letterHi" hidden></p>
+            <p>Jokes aside, I wanted to make this birthday feel a little different.</p>
+            <p>You deserve a day filled with laughter, good food, beautiful moments, and memories that make you smile long after the day is over.</p>
+            <p>I hope this little adventure reminds you how special you are and how much you deserve to enjoy life.</p>
+            <p>Here’s to 28, new memories, and a really good Sunday.</p>
+            <p class="sig" id="letterSig">— The Birthday Planning Department</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- rsvp -->
+    <section class="section" id="rsvp" aria-labelledby="rsvp-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="sec-tag"><span class="num">FORM 06</span><span class="eyebrow">Final confirmation</span></div>
+          <h2 class="h-sec" id="rsvp-title">So… are we doing this?</h2>
+        </div>
+        <div class="rsvp-copy">
+          <span class="date">Sunday, November 8, 2026</span>
+          <span>One birthday girl.</span>
+          <span>One thoughtfully planned day.</span>
+          <span>A lovely road trip.</span>
+          <span>Food chosen according to your preferences.</span>
+          <span>A few surprises.</span>
+          <span>And memories waiting to happen.</span>
+          <span class="miss">All that’s missing is your confirmation.</span>
+        </div>
+
+        <div class="rsvp-btns" role="group" aria-label="Your RSVP" id="rsvpGroup" aria-describedby="err-rsvp">
+          <button class="btn" type="button" data-rsvp="yes" aria-pressed="false">Yes, let’s make memories!</button>
+          <button class="btn" type="button" data-rsvp="obviously" aria-pressed="false">Obviously. I’m turning 28!</button>
+          <button class="btn ghost" type="button" data-rsvp="info" aria-pressed="false" aria-controls="infoPanel">I need more information.</button>
+        </div>
+        <p class="err" id="err-rsvp" hidden style="margin-top:12px"></p>
+        <p class="rsvp-state" id="rsvpState" aria-live="polite"></p>
+
+        <div class="info-panel" id="infoPanel" hidden>
+          <span class="stamp">Request logged</span>
+          <p class="lede">Understandable. However, certain details remain classified for security reasons.</p>
+          <p>You may request clarification, but the destination and selected surprises remain protected under the Birthday Secrets Act.</p>
+          <div class="tf">
+            <label for="question">Your question for HQ</label>
+            <span class="help" id="help-q">Optional. It gets added to your answers below. Answers may be suspiciously vague.</span>
+            <textarea id="question" maxlength="500" aria-describedby="help-q" placeholder="e.g. Do I need a jacket?"></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- dispatch -->
+    <section class="section" id="dispatch" aria-labelledby="dispatch-title">
+      <div class="wrap">
+        <div class="dispatch-card">
+          <span class="eyebrow" style="color:#f0b58c">Last step · Send to HQ</span>
+          <h2 class="h-sec" id="dispatch-title">Send your answers.</h2>
+          <p>Here’s everything you chose, ready to send. Check it, then send it on WhatsApp or copy it.</p>
+
+          <div class="errbox" id="errBox" hidden role="alert" tabindex="-1"></div>
+
+          <pre class="preview" id="preview" aria-label="Preview of your answers"></pre>
+
+          <div class="dispatch-actions">
+            <a class="btn primary" id="waBtn" href="https://wa.me/" target="_blank" rel="noopener"><i data-lucide="send"></i><span>Send on WhatsApp</span></a>
+            <button class="btn ghost" id="copyBtn" type="button"><i data-lucide="copy"></i><span>Copy my answers</span></button>
+          </div>
+          <p class="toast" id="toast" aria-live="polite"></p>
+          <textarea class="copy-fallback" id="copyFallback" hidden readonly aria-label="Your answers as text"></textarea>
+
+          <p class="privacy"><i data-lucide="shield-check"></i><span id="privacyText">Nothing is sent automatically. Your answers stay on this phone until you tap send in WhatsApp yourself.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        <span class="big-f">Operation: Level 28</span>
+        Prepared by the Birthday Planning Department · Ref. L28-1108<br>
+        This document will not self-destruct. Please keep it.
+      </div>
+    </footer>
+  </div>
+</main>
+
+<!-- confirmation modal -->
+<div class="modal" id="modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <span class="stamp">Approved</span>
+    <h2 class="accepted" id="modalTitle" tabindex="-1">Mission accepted!</h2>
+    <p style="margin-top:14px">Your attendance has been provisionally approved by the Birthday Planning Department.</p>
+    <p style="margin-top:10px"><strong>Your next assignment:</strong> submit your breakfast and lunch preferences.</p>
+    <dl>
+      <dt>Dress code</dt><dd>Sport casual</dd>
+      <dt>Date</dt><dd>Sunday, November 8, 2026</dd>
+      <dt>Excitement</dt><dd>Ideally unreasonable</dd>
+    </dl>
+    <div class="modal-actions">
+      <button class="btn olive" type="button" id="modalGo">Send my answers</button>
+      <button class="btn ghost" type="button" id="modalClose">Back to the briefing</button>
+    </div>
+  </div>
+</div>
+<canvas id="confetti" aria-hidden="true" hidden></canvas>
+
+<script src="https://unpkg.com/lucide@0.441.0/dist/umd/lucide.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
