@@ -7,7 +7,7 @@ window.CONFIG = {
   myName: "",             // e.g. "Mohammad". Leave "" to sign as the Planning Department.
   // Your WhatsApp number in international format, digits only, no + or spaces.
   // Example for Lebanon: "96170123456". Leave "" and WhatsApp will let her pick the chat.
-  whatsappNumber: "",
+  whatsappNumber: "+96171139833",
   // Countdown target. Beirut is UTC+02:00 in November. Change the time once pickup is set.
   eventStart: "2026-11-08T00:00:00+02:00",
   eventDateLabel: "Sunday, November 8, 2026",
