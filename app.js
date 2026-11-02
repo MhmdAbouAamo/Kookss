@@ -4,7 +4,7 @@ const CONFIG = window.CONFIG;
 
 (() => {
   "use strict";
-  const $ = (s, r = document) => r.querySelector(s);
+  const $ = (s, r = document) => r.querySelector(s);   
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
   const STORE = "level28-draft-v1";
   const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
