@@ -7,7 +7,7 @@
    - A small sound button lets her mute it (remembered on her device).
 
    Settings go on the <script> tag in index.html:
-     data-src="assets/music.mp3"   the music file (replace the file to change the song)
+     data-src="music.mp3"   the music file (replace the file to change the song)
      data-pos="bottom-right"       button position: top-right | bottom-right | top-left | bottom-left
      data-volume="0.5"             0 to 1
      data-loop="true"              false = play once instead of looping
@@ -15,7 +15,7 @@
 (() => {
   "use strict";
   const tag = document.currentScript;
-  const SRC = (tag && tag.dataset.src) || "assets/music.mp3";
+  const SRC = (tag && tag.dataset.src) || "music.mp3";
   const POS = (tag && tag.dataset.pos) || "bottom-right";
   const parsedVol = parseFloat(tag && tag.dataset.volume);
   const VOL = Math.min(1, Math.max(0, isNaN(parsedVol) ? 0.5 : parsedVol));
