@@ -12,6 +12,8 @@ operation-level-28/
 ├── css/styles.css      ← all styling (colors are at the top in :root)
 ├── js/config.js        ← PERSONALIZE HERE: names, WhatsApp number, date, food options, terms
 ├── js/app.js           ← page logic (countdown, forms, RSVP, WhatsApp); usually no need to edit
+├── js/music.js         ← plays the background music
+├── assets/music.mp3    ← the music (replace to change the song)
 ├── assets/favicon.svg  ← the browser tab icon
 └── .vscode/extensions.json  ← suggests the Live Server extension
 ```
@@ -84,3 +86,13 @@ Note: on the free plan the repository is public, so anyone who finds it can read
 ## 5. Send it
 
 Open the GitHub Pages link on your own phone and do a full test run (unlock, fill in, tap Send, check the message). Then paste the link into her WhatsApp chat.
+
+## Background music
+
+`js/music.js` plays `assets/music.mp3` when the page opens and stops it when the page is closed.
+
+- Browsers block sound until the visitor interacts, so if autoplay is refused it starts on her first tap, click or key press.
+- It pauses when she switches apps or locks her phone, resumes when she returns, and stops completely when the page is closed.
+- A round sound button lets her mute it (remembered on her device).
+- To use your own song, replace `assets/music.mp3` (keep the name, or change `data-src` on the script tag at the bottom of `index.html`). Keep it a reasonable size (a few MB) so it loads fast on mobile data.
+- Options on that same script tag: `data-loop="false"` plays once instead of looping, `data-volume="0.3"` (0 to 1), `data-pos="top-left"` moves the button.
